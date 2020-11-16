@@ -38,13 +38,15 @@ Javascript 기초를 공부하면서 적용하는 단계까지!
 
 [9.  자바스크립트 9. 유용한 10가지 배열 함수들. Array APIs 총정리 ( JavaScript ES6)](note/9_array_API.md)
 
-[10. 자바스크립트 10. JSON 개념 정리 와 활용방법 및 유용한 사이트 공유 JavaScript JSON (JavaScript ES6)]
+[10. 자바스크립트 10. JSON 개념 정리 와 활용방법 및 유용한 사이트 공유 JavaScript JSON (JavaScript ES6)](note/10_json.md)
 
 [11. 자바스크립트 11. 비동기 처리의 시작 콜백 이해하기, 콜백 지옥 체험 😱 JavaScript Callback (JavaScript ES6)]
 
 [12. 자바스크립트 12. 프로미스 개념부터 활용까지 JavaScript Promise (JavaScript ES6)]
 
 [13. 자바스크립트 13. 비동기의 꽃 JavaScript async 와 await 그리고 유용한 Promise APIs (JavaScript ES6)]
+
+[14. Etc. 프로그래밍 할 때, 꿀Tip 정리!](note/14_Etc_Tip.md)
 
 ## Enviroment
 
