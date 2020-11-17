@@ -71,8 +71,6 @@ Javascript 기초를 공부하면서 적용하는 단계까지!
 
 [14. Etc. 프로그래밍 할 때, 꿀Tip 정리!](note/14_Etc_Tip.md)
 
-- [Chapter 14. 코드]
-
 ## Enviroment
 
 - Windows10
