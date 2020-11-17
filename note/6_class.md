@@ -24,7 +24,7 @@ object에 상관없이 class안에서 써야한다면, 접근하지 못하게 st
 
 > static 같은 경우는, class안에서만 돌고 돌 때, 쓰면 좋을 것 같다. 아마 자주 애용할 듯...
 
-<code>
+```javascript
 
     class Article{
         static publisher = 'Dream Coding';
@@ -42,7 +42,7 @@ object에 상관없이 class안에서 써야한다면, 접근하지 못하게 st
     console.log(`article number : ${article1.articleNumber}`); // 1
     console.log(`article number : ${Article.articleNumber}`); // undefined
 
-</code>
+```
 
 ### 2. Inheritance
 

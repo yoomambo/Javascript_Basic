@@ -9,7 +9,7 @@
 
 ## function (number, index?)
 
-<code>
+```javascript
 
     splice(start: number, deleteCount?: number): T[];
     /**
@@ -19,7 +19,7 @@
      * @param items Elements to insert into the array in place of the deleted elements.
      */
 
-</code>
+```
 
 1. method의 목적이 무엇인가
 2. parameter는 어떤 값을 전달해야하는지 (?와 T 구별하기)

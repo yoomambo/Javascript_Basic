@@ -19,7 +19,7 @@
 
 ### 1. Function Declaration Rule
 
-<code>
+```javascript
 
     function printHello() {
         console.log("Hello World!");
@@ -29,7 +29,7 @@
         console.log(message);    
     }
 
-</code>
+```
 
 - 기능 : 하나의 함수는 하나의 일만 하도록 한다.
 - naming : doSomething, commnad 형태로 verb 형태로 정한다.
@@ -38,7 +38,7 @@
 
 ### 2. Early Return, Early Exit
 
-<code>
+```javascript
 
     // 7. Early Return, Early Exit
     // bad
@@ -55,7 +55,7 @@
         // long upgrade logic
     }
 
-</code>
+```
 
 - 일정 조건을 못 만족하면, 빨리 return 시키는게 가독성이 좋다.
 - 일정 조건이 만족하는 것을 제일 뒤로 뺀다.
@@ -64,7 +64,7 @@
 
 #### a. Function Expression
 
-<code>
+```javascript
 
     // First-class function
 
@@ -83,7 +83,7 @@
     const sumAgain = sum;
     console.log(sumAgain(1,3));
 
-</code>
+```
 
 - function을 변수안에 할당이 가능하다.
 - 변수를 선언하면서 함수를 정의해도 된다.
@@ -91,7 +91,7 @@
 
 #### b. CallBack Function
 
-<code>
+```javascript
 
     // 2. Function Expression을 써서 CallBack function 
     function randomQuiz(answer, printYes, printNo) {
@@ -116,7 +116,7 @@
     randomQuiz('wrong', printYes, printNo);
     randomQuiz('love you', printYes, printNo);
 
-</code>
+```
 
 - function을 실행할 때, function을 파라미터 인자로 받을 수 있다.
 - anonymous function
@@ -126,7 +126,7 @@
 
 #### c. Arrow function
 
-<code>
+```javascript
 
     const simplePrint = () => console.log('simplePrint');
     const add = (a,b) => a+b;
@@ -134,19 +134,19 @@
         return a*b;
     }
 
-</code>
+```
 
 - 변수 이름 / (params) / return  할 value 순으로 작성
 
 #### d. IIFE
 
-<code>
+```javascript
 
     (function hello() {
         console.log('IIFE');
     })();
 
-</code>
+```
 
 - Immeadiately Invoked Function Expression
 - 함수를 선언함과 동시에 출력하기를 바란다.

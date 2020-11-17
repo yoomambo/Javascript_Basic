@@ -11,7 +11,7 @@
 
 ### 1. head tag 안에
 
-<code>
+```html
 
     <!DOCTYPE html>
     <html lang="en">
@@ -25,8 +25,8 @@
         <div></div>
     </body>
     </html>
-
-</code>
+    
+```
 
 <img src="../image/javscript_file_parsing_1.PNG">
 
@@ -37,7 +37,7 @@ _**단점**_ : js 파일이 너무 커서 다운 받는데 시간이 오래걸�
 
 ### 2. body tag 안에
 
-<code>
+```html
 
     <!DOCTYPE html>
     <html lang="en">
@@ -52,7 +52,7 @@ _**단점**_ : js 파일이 너무 커서 다운 받는데 시간이 오래걸�
     </body>
     </html>
 
-</code>
+```
 
 <img src="../image/javscript_file_parsing_2.PNG">
 
@@ -62,7 +62,7 @@ _**단점**_ : javascript에 의존하는 웹페이지 같은 경우는, 사용�
 
 ### 3. head + async
 
-<code>
+```html
 
     <!DOCTYPE html>
     <html lang="en">
@@ -77,7 +77,7 @@ _**단점**_ : javascript에 의존하는 웹페이지 같은 경우는, 사용�
     </body>
     </html>
 
-</code>
+```
 
 <img src="../image/javscript_file_parsing_3.PNG">
 
@@ -87,7 +87,7 @@ _**단점**_ : 만약, html tag 요소가 필요한 자바스크립트 파일이
 
 #### async가 여러 개일 때
 
-<code>
+```html
 
     <!DOCTYPE html>
     <html lang="en">
@@ -104,7 +104,7 @@ _**단점**_ : 만약, html tag 요소가 필요한 자바스크립트 파일이
     </body>
     </html>
 
-</code>
+```
 
 <img src="../image/javscript_file_parsing_5.PNG">
 
@@ -114,7 +114,7 @@ _**단점**_ : 만약 자바스크립트 파일이 서로 순서가 있는 경�
 
 ### 4. head + defer
 
-<code>
+```html
 
     <!DOCTYPE html>
     <html lang="en">
@@ -131,7 +131,7 @@ _**단점**_ : 만약 자바스크립트 파일이 서로 순서가 있는 경�
     </body>
     </html>
 
-</code>
+```
 
 <img src="../image/javscript_file_parsing_3.PNG">
 

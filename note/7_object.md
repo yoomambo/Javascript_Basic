@@ -16,7 +16,7 @@
 
 ## 1. object equality by reference
 
-<code>
+```javascript
 
     // object equality by reference
     const ellie1 = {name:'ellie'};
@@ -26,7 +26,7 @@
     console.log(ellie1 === ellie2); // false
     console.log(ellie1 === ellie3); // true
 
-</code>
+```
 
 <img src = "../image/object_equality.PNG" width = 30%>
 
@@ -34,7 +34,7 @@ ellie1과 ellie2는 내용은 같은 object이지만, 실제로는 서로 다른
 
 ## 2. object 생성
 
-<code>
+```javascript
 
     const ellie = new Object(); // first
     const ellie = {name : 'ellie', age : 4}; // second
@@ -44,20 +44,20 @@ ellie1과 ellie2는 내용은 같은 object이지만, 실제로는 서로 다른
     }
     print_another(ellie);
 
-</code>
+```
 
 ## 3. object Property 접근
 
 ### cf) 자바스크립트의 미친 짓
 
-<code>
+```javascript
 
     //  미친짓 1 : object를 이미 생성하고 추가도 가능하긴함.
     ellie.hasJob = true;
     //  미친짓 2 : object를 이미 생성하고 추가도 가능하긴함.
     delete ellie.hasJob
 
-</code>
+```
 
 > 이 부분은 진짜 별로다... class를 추가할 수도 있다는 말인데...흐음...해킹문제가 좀 걱정되긴 한다.
 
@@ -74,7 +74,7 @@ ellie1과 ellie2는 내용은 같은 object이지만, 실제로는 서로 다른
 
 ## 4. Property value shorthand
 
-<code>
+```javascript
 
     //  1. 일일히 생성하기
     const person1 = {name:'bob', age:2}
@@ -99,7 +99,7 @@ ellie1과 ellie2는 내용은 같은 object이지만, 실제로는 서로 다른
         // return this;
     }
 
-</code>
+```
 
 ## 5. Operator
 
