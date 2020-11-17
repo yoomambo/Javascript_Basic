@@ -2,15 +2,84 @@
 
 // Javascript is synchronous
 // Execute the code block in order after hoisting
-// hoisting : var, function 함수 선언들이 제일 위로 올라가는 현상
-// hoisting 이 된 이후로부터 자바스크립트가 동작.
 
+function printImmediately(print) {
+    print();
+}
+printImmediately( () => console.log('Hello'));
+
+
+function printWithDelay(print, timeout) {
+    setTimeout(print, timeout);
+}
+
+// callback function
+
+// synchronous
 console.log('1');
 setTimeout(() => console.log('2'), 1000);
 console.log('3');
 
-// 자바스크립트 엔진은 코드를 위에서부터 밑으로 내려가면서 본다.
-// setTimeout은 브라우저 API로 브라우저에게 명령을 보내고,
-// 엔진은 기다리지 않고 console.log를 진행한다.
+// Asynchronous callback
+printWithDelay( () => console.log("async callback"), 2000);
 
-// callback function
+
+// callback 지옥행
+
+class UserStorage {
+    loginUser(id, password, onSuccess, onError) {
+        setTimeout( () => {
+
+            if (
+                (id === 'ellie' && password === 'dream') ||
+                (id === 'coder' && password === 'academy')
+            ) {
+                onSuccess(id);
+            }
+            else {
+                onError(new Error('not found'));
+            }
+        }, 2000);
+    }
+
+    getRoles(user, onSuccess, onError) {
+
+        setTimeout(() => {
+            if( user === 'ellie') {
+                onSuccess({name : 'ellie', role : 'admin'});
+            }
+            else{
+                onError(new Error('no access'));
+            }
+        }, 1000);
+    }
+}
+
+// 1. id, password를 입력받게
+// 2. login
+// 3. id를 확인해서 role을 받아온다.
+// 4. 출력
+
+const userStorage = new UserStorage();
+
+const id = prompt('enter your id');
+const password = prompt('enter your password');
+
+userStorage.loginUser(
+    id, 
+    password,
+    user => {
+        userStorage.getRoles(
+            user,
+            userWithRole => {
+                alert(`Hello ${userWithRole.name}, you have a ${userWithRole.role} role`);
+            },
+            error => {
+                console.log(error);
+            }
+        );
+    },
+    error => {
+        console.log(error);
+    }
+);
